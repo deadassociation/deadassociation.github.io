@@ -14,3 +14,12 @@ ul {
 ul li:hover {
     color: red;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
