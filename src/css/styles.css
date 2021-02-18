@@ -23,3 +23,13 @@ a:visited {
     text-decoration: none;
     color: inherit;
 }
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+a:focus {
+    text-decoration: none;
+    color: red;
+}
