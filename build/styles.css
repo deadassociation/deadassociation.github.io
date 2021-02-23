@@ -1,0 +1,52 @@
+html {
+  background-color: #000;
+  color: #fff;
+  font-size: 3vh;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul li:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+a:focus {
+  text-decoration: none;
+}
+
+#draggable {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  cursor: move;
+  user-select: none;
+}
+
+#image-1 {
+  --main-background-image: url("/assets/content/IMG_8843-min.jpg");
+  background-image: var(--main-background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  --main-width: 400px;
+  width: var(--main-width);
+  height: calc(var(--main-width) * 1.2);
+}
+
+/*# sourceMappingURL=styles.css.map */

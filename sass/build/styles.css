@@ -1,0 +1,117 @@
+html {
+  background-color: #000;
+  color: #fff;
+  font-size: 3vh;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul li:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+a:focus {
+  text-decoration: none;
+}
+
+#image-1 {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  user-select: none;
+  cursor: move;
+  background-image: url("/assets/content/IMG_8843-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 480px;
+  top: 368px;
+  left: 166px;
+}
+
+#image-2 {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  user-select: none;
+  cursor: move;
+  background-image: url("/assets/content/IMG_8845-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 480px;
+  top: 846px;
+  left: 668px;
+}
+
+#image-3 {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  user-select: none;
+  cursor: move;
+  background-image: url("/assets/content/IMG_8849-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 480px;
+  top: 437px;
+  left: 362px;
+}
+
+#image-4 {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  user-select: none;
+  cursor: move;
+  background-image: url("/assets/content/IMG_8851-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 480px;
+  top: 987px;
+  left: 1477px;
+}
+
+#image-5 {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  border: 6px solid red;
+  user-select: none;
+  cursor: move;
+  background-image: url("/assets/content/IMG_8853-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 480px;
+  top: 268px;
+  left: 1130px;
+}
+
+/*# sourceMappingURL=styles.css.map */

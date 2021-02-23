@@ -1,0 +1,111 @@
+@use "sass:map";
+@use "sass:math";
+
+html {
+    background-color: #000;
+    color: #fff;
+
+    font-size: 3vh;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li:hover {
+        color: red;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    &:hover {
+        text-decoration: none;
+        color: red;
+    }
+    
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+
+@mixin image($key) {
+    position: absolute;
+    z-index: 9;
+    background-color: red;
+    border: 6px solid red;
+    user-select: none;
+    cursor: move;
+
+    $keys: (
+        1: "IMG_8843-min",
+        2: "IMG_8845-min",
+        3: "IMG_8849-min",
+        4: "IMG_8851-min",
+        5: "IMG_8853-min",
+    );
+
+    background-image: url("/assets/content/#{map.get($keys, $key)}.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    $main-width: 400px;
+    width: $main-width;
+    height: $main-width * 1.2;
+}
+
+@mixin images() {
+    #image-1 {
+        @include image(1);
+        @include randomize(1);
+    }
+    #image-2 {
+        @include image(2);
+        @include randomize(2);
+    }
+    #image-3 {
+        @include image(3);
+        @include randomize(3);
+    }
+    #image-4 {
+        @include image(4);
+        @include randomize(4);
+    }
+    #image-5 {
+        @include image(5);
+        @include randomize(5);
+    }
+}
+
+@mixin randomize($key) {
+    
+    @if $key == 1 {
+        top: #{random(100) + 300}px;
+        left: #{random(100) + 100}px;
+    } @else if $key == 2 {
+        top: #{random(100) + 800}px;
+        left: #{random(100) + 600}px;
+    } @else if $key == 3 {
+        top: #{random(100) + 400}px;
+        left: #{random(100) + 300}px;
+    } @else if $key == 4 {
+        top: #{random(100) + 900}px;
+        left: #{random(100) + 1400}px;
+    } @else if $key == 5 {
+        top: #{random(100) + 200}px;
+        left: #{random(100) + 1100}px;
+    }
+
+}
+
+@include images();
