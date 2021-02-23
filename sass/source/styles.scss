@@ -4,7 +4,7 @@
 html {
     background-color: #000;
     color: #fff;
-
+    font-family: "Garamond";
     font-size: 3vh;
     text-align: center;
 }
@@ -42,7 +42,7 @@ a {
     position: absolute;
     z-index: 9;
     background-color: red;
-    border: 6px solid red;
+    border: 5px solid red;
     user-select: none;
     cursor: move;
 

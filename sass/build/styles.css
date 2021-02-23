@@ -1,6 +1,7 @@
 html {
   background-color: #000;
   color: #fff;
+  font-family: "Garamond";
   font-size: 3vh;
   text-align: center;
 }
@@ -33,7 +34,7 @@ a:focus {
   position: absolute;
   z-index: 9;
   background-color: red;
-  border: 6px solid red;
+  border: 5px solid red;
   user-select: none;
   cursor: move;
   background-image: url("/assets/content/IMG_8843-min.jpg");
@@ -42,15 +43,15 @@ a:focus {
   background-repeat: no-repeat;
   width: 400px;
   height: 480px;
-  top: 336px;
-  left: 172px;
+  top: 337px;
+  left: 102px;
 }
 
 #image-2 {
   position: absolute;
   z-index: 9;
   background-color: red;
-  border: 6px solid red;
+  border: 5px solid red;
   user-select: none;
   cursor: move;
   background-image: url("/assets/content/IMG_8845-min.jpg");
@@ -59,15 +60,15 @@ a:focus {
   background-repeat: no-repeat;
   width: 400px;
   height: 480px;
-  top: 874px;
-  left: 682px;
+  top: 827px;
+  left: 606px;
 }
 
 #image-3 {
   position: absolute;
   z-index: 9;
   background-color: red;
-  border: 6px solid red;
+  border: 5px solid red;
   user-select: none;
   cursor: move;
   background-image: url("/assets/content/IMG_8849-min.jpg");
@@ -76,15 +77,15 @@ a:focus {
   background-repeat: no-repeat;
   width: 400px;
   height: 480px;
-  top: 441px;
-  left: 343px;
+  top: 490px;
+  left: 386px;
 }
 
 #image-4 {
   position: absolute;
   z-index: 9;
   background-color: red;
-  border: 6px solid red;
+  border: 5px solid red;
   user-select: none;
   cursor: move;
   background-image: url("/assets/content/IMG_8851-min.jpg");
@@ -93,15 +94,15 @@ a:focus {
   background-repeat: no-repeat;
   width: 400px;
   height: 480px;
-  top: 935px;
-  left: 1441px;
+  top: 978px;
+  left: 1401px;
 }
 
 #image-5 {
   position: absolute;
   z-index: 9;
   background-color: red;
-  border: 6px solid red;
+  border: 5px solid red;
   user-select: none;
   cursor: move;
   background-image: url("/assets/content/IMG_8853-min.jpg");
@@ -110,8 +111,8 @@ a:focus {
   background-repeat: no-repeat;
   width: 400px;
   height: 480px;
-  top: 264px;
-  left: 1142px;
+  top: 236px;
+  left: 1132px;
 }
 
 /*# sourceMappingURL=styles.css.map */
