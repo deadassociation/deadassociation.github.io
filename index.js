@@ -58,6 +58,7 @@ function getCollection() {
     return images;
 }
 
+/*
 (function() {
     var h, a, f;
     a = document.getElementsByTagName('link');
@@ -70,6 +71,7 @@ function getCollection() {
       }
     } // for
   })()
+*/
 
 /*
 figure out how to generate all divs with attributes from directory!
