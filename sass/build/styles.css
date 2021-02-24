@@ -4,6 +4,7 @@ html {
   font-family: "Garamond";
   font-size: 3vh;
   text-align: center;
+  min-height: 150vh;
 }
 
 ul {
@@ -30,89 +31,128 @@ a:focus {
   text-decoration: none;
 }
 
+.draggable {
+  overflow: hidden;
+}
+
 #image-1 {
   position: absolute;
   z-index: 9;
-  background-color: red;
-  border: 5px solid red;
   user-select: none;
   cursor: move;
-  background-image: url("/assets/content/IMG_8843-min.jpg");
+  border: 5px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 480px;
-  top: 337px;
-  left: 102px;
+  background-color: red;
+  min-width: 35vh;
+  min-height: 50vh;
+  max-width: 45vh;
+  max-height: 60vh;
+  top: 53vh;
+  left: 146vh;
+  left: 146;
+  top: 23vh;
 }
 
 #image-2 {
   position: absolute;
   z-index: 9;
-  background-color: red;
-  border: 5px solid red;
   user-select: none;
   cursor: move;
-  background-image: url("/assets/content/IMG_8845-min.jpg");
+  border: 5px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 480px;
-  top: 827px;
-  left: 606px;
+  background-color: red;
+  min-width: 35vh;
+  min-height: 50vh;
+  max-width: 45vh;
+  max-height: 60vh;
+  top: 81vh;
+  left: 95vh;
+  left: 95vh;
 }
 
 #image-3 {
   position: absolute;
   z-index: 9;
-  background-color: red;
-  border: 5px solid red;
   user-select: none;
   cursor: move;
-  background-image: url("/assets/content/IMG_8849-min.jpg");
+  border: 5px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 480px;
-  top: 490px;
-  left: 386px;
+  background-color: red;
+  min-width: 35vh;
+  min-height: 50vh;
+  max-width: 45vh;
+  max-height: 60vh;
+  top: 50vh;
+  left: 30vh;
+  left: 30;
+  top: 50vh;
 }
 
 #image-4 {
   position: absolute;
   z-index: 9;
-  background-color: red;
-  border: 5px solid red;
   user-select: none;
   cursor: move;
-  background-image: url("/assets/content/IMG_8851-min.jpg");
+  border: 5px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 480px;
-  top: 978px;
-  left: 1401px;
+  background-color: red;
+  min-width: 35vh;
+  min-height: 50vh;
+  max-width: 45vh;
+  max-height: 60vh;
+  top: 72vh;
+  left: 129vh;
+  left: 129vh;
 }
 
 #image-5 {
   position: absolute;
   z-index: 9;
-  background-color: red;
-  border: 5px solid red;
   user-select: none;
   cursor: move;
-  background-image: url("/assets/content/IMG_8853-min.jpg");
+  border: 5px solid red;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 480px;
-  top: 236px;
-  left: 1132px;
+  background-color: red;
+  min-width: 35vh;
+  min-height: 50vh;
+  max-width: 45vh;
+  max-height: 60vh;
+  top: 31vh;
+  left: 20vh;
+  left: 20;
+  top: 31vh;
+}
+
+@media (min-width: 1200px) {
+  #image-1 {
+    background-image: url("/assets/content/IMG_8843-min.jpg");
+  }
+
+  #image-2 {
+    background-image: url("/assets/content/IMG_8845-min.jpg");
+  }
+
+  #image-3 {
+    background-image: url("/assets/content/IMG_8849-min.jpg");
+  }
+
+  #image-4 {
+    background-image: url("/assets/content/IMG_8851-min.jpg");
+  }
+
+  #image-5 {
+    background-image: url("/assets/content/IMG_8853-min.jpg");
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

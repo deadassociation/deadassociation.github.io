@@ -1,4 +1,4 @@
-@use "sass:map";
+@use "sass:list";
 @use "sass:math";
 
 html {
@@ -7,6 +7,8 @@ html {
     font-family: "Garamond";
     font-size: 3vh;
     text-align: center;
+
+    min-height: 150vh;
 }
 
 ul {
@@ -37,75 +39,94 @@ a {
     }
 }
 
-// I love SASS!
-@mixin image($key) {
+.draggable {
+    overflow: hidden;
+}
+
+$keys: (
+    "IMG_8843-min",
+    "IMG_8845-min",
+    "IMG_8849-min",
+    "IMG_8851-min",
+    "IMG_8853-min",
+);
+
+@mixin image() {
     position: absolute;
     z-index: 9;
-    background-color: red;
-    border: 5px solid red;
     user-select: none;
     cursor: move;
-
-    $keys: (
-        1: "IMG_8843-min",
-        2: "IMG_8845-min",
-        3: "IMG_8849-min",
-        4: "IMG_8851-min",
-        5: "IMG_8853-min",
-    );
-
-    background-image: url("/assets/content/#{map.get($keys, $key)}.jpg");
+    
+    border: 5px solid red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: red;
 
-    $main-width: 400px;
-    width: $main-width;
-    height: $main-width * 1.2;
+    $width: 35vh;
+    $height: 50vh;
+    min-width: $width;
+    min-height: $height;
+    max-width: $width + 10vh;
+    max-height: $height + 10vh;
 }
 
 @mixin images() {
-    #image-1 {
-        @include image(1);
-        @include randomize(1);
-    }
-    #image-2 {
-        @include image(2);
-        @include randomize(2);
-    }
-    #image-3 {
-        @include image(3);
-        @include randomize(3);
-    }
-    #image-4 {
-        @include image(4);
-        @include randomize(4);
-    }
-    #image-5 {
-        @include image(5);
-        @include randomize(5);
+
+    @for $i from 1 through list.length($keys) {
+        #image-#{$i} {
+            @include image();
+            @include randomize($i);
+        }
     }
 }
 
 @mixin randomize($key) {
-    
-    @if $key == 1 {
-        top: #{random(100) + 300}px;
-        left: #{random(100) + 100}px;
-    } @else if $key == 2 {
-        top: #{random(100) + 800}px;
-        left: #{random(100) + 600}px;
-    } @else if $key == 3 {
-        top: #{random(100) + 400}px;
-        left: #{random(100) + 300}px;
-    } @else if $key == 4 {
-        top: #{random(100) + 900}px;
-        left: #{random(100) + 1400}px;
-    } @else if $key == 5 {
-        top: #{random(100) + 200}px;
-        left: #{random(100) + 1100}px;
-    }
 
+    $rand: random(3);
+    
+    @if ($key % 2) != 0 {
+        $top: (random(40) + 30);
+        $left: (random(150) + 2);
+        top: $top * 1vh;
+        left: $left * 1vh;
+
+        @if ($left > 200 and $rand == 1) {
+            left: ($left * 1vh) - 200vh;
+        } @else if ($left > 200) {
+            left: ($left * 1vh) - 150vh;
+        } @else {
+            left: $left;
+        }
+
+        @if ($top > 50) {
+            top:  ($top * 1vh) - 30vh;
+        } @else {
+            top: $top * 1vh;
+        }
+
+    } @else if ($key % 2) == 0 {
+        $top: (random(40) + 50);
+        $left: (random(100) + 30);
+        top: $top * 1vh;
+        left: $left * 1vh;
+
+        @if ($left > 200 and $rand == 1) {
+            left: ($left * 1vh) - 200vh;
+        } @else {
+            left: $left * 1vh;
+        }
+        
+    }
 }
 
 @include images();
+
+@media (min-width: 1200px) {
+
+    @for $i from 1 through list.length($keys) {
+        #image-#{$i} {
+            background-image: url("/assets/content/#{list.nth($keys, $i)}.jpg");
+        }
+    }
+}
