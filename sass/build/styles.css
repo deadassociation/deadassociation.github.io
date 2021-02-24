@@ -1,7 +1,6 @@
 html {
   background-color: #000;
   color: #fff;
-  font-family: "Garamond";
   font-size: 3vh;
   text-align: center;
   min-height: 150vh;
@@ -49,10 +48,10 @@ a:focus {
   min-height: 50vh;
   max-width: 45vh;
   max-height: 60vh;
-  top: 53vh;
-  left: 146vh;
-  left: 146;
-  top: 23vh;
+  top: 61vh;
+  left: 133vh;
+  left: 133;
+  top: 31vh;
 }
 
 #image-2 {
@@ -69,9 +68,9 @@ a:focus {
   min-height: 50vh;
   max-width: 45vh;
   max-height: 60vh;
-  top: 81vh;
-  left: 95vh;
-  left: 95vh;
+  top: 88vh;
+  left: 44vh;
+  left: 44vh;
 }
 
 #image-3 {
@@ -88,10 +87,10 @@ a:focus {
   min-height: 50vh;
   max-width: 45vh;
   max-height: 60vh;
-  top: 50vh;
-  left: 30vh;
-  left: 30;
-  top: 50vh;
+  top: 59vh;
+  left: 36vh;
+  left: 36;
+  top: 29vh;
 }
 
 #image-4 {
@@ -108,9 +107,9 @@ a:focus {
   min-height: 50vh;
   max-width: 45vh;
   max-height: 60vh;
-  top: 72vh;
-  left: 129vh;
-  left: 129vh;
+  top: 56vh;
+  left: 128vh;
+  left: 128vh;
 }
 
 #image-5 {
@@ -127,10 +126,10 @@ a:focus {
   min-height: 50vh;
   max-width: 45vh;
   max-height: 60vh;
-  top: 31vh;
-  left: 20vh;
-  left: 20;
-  top: 31vh;
+  top: 34vh;
+  left: 46vh;
+  left: 46;
+  top: 34vh;
 }
 
 @media (min-width: 1200px) {
